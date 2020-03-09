@@ -1,0 +1,13 @@
+<h1>Current book list:</h1>
+
+${bookData.map(book =>
+  `
+  <div class="box" id="all-books-box">
+    <a href="/book/${book.id}"><img src="${book.image}" alt="${book.name}"></a>
+    <div class="content">
+      <a href="/book/${book.id}"><div class="title">${book.name}</div></a>
+      <div class="subtitle">By: ${book.author}</div>
+    </div>
+  </div>
+  `
+)}
